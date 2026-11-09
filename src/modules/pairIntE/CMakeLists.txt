@@ -1,1 +1,1 @@
-//empty file
+dissolve_add_module(pairIntE.h pairIntE)
