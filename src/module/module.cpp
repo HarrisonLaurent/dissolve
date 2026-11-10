@@ -47,6 +47,7 @@ EnumOptions<ModuleTypes::ModuleType> moduleTypes_("ModuleType", {{ModuleTypes::A
                                                                  {ModuleTypes::MolShake, "MolShake"},
                                                                  {ModuleTypes::NeutronSQ, "NeutronSQ"},
                                                                  {ModuleTypes::OrientedSDF, "OrientedSDF"},
+                                                                 {ModuleTypes::PairIntE, "PairIntE"},
                                                                  {ModuleTypes::QSpecies, "QSpecies"},
                                                                  {ModuleTypes::SDF, "SDF"},
                                                                  {ModuleTypes::SiteRDF, "SiteRDF"},
