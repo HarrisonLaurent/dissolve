@@ -41,6 +41,7 @@ enum ModuleType
     MolShake,
     NeutronSQ,
     OrientedSDF,
+    PairIntE,
     QSpecies,
     SDF,
     SiteRDF,
