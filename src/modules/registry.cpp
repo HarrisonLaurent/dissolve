@@ -32,6 +32,7 @@
 #include "modules/moleculeTorsion/moleculeTorsion.h"
 #include "modules/neutronSQ/neutronSQ.h"
 #include "modules/orientedSDF/orientedSDF.h"
+#include "modules/pairIntE/pairIntE.h"
 #include "modules/qSpecies/qSpecies.h"
 #include "modules/sdf/sdf.h"
 #include "modules/siteRDF/siteRDF.h"
@@ -90,6 +91,7 @@ ModuleRegistry::ModuleRegistry()
         "Calculate spatial density functions around oriented sites, restricted by relative molecule orientation", "Analysis");
     registerProducer<ModifierOSitesModule>(ModuleTypes::ModifierOSites,
                                            "Calculate the percentage FO, BO and NBO bonded to a modifier atom", "Analysis");
+    registerProducer<PairIntEModule>(ModuleTypes::PairIntE, "Calculate intermolecular pairwise energies", "Analysis");
     registerProducer<QSpeciesModule>(ModuleTypes::QSpecies, "Calculate QSpecies of a network former", "Analysis");
     registerProducer<SDFModule>(ModuleTypes::SDF, "Calculate spatial density functions around oriented sites", "Analysis");
     registerProducer<SiteRDFModule>(ModuleTypes::SiteRDF, "Calculate radial distribution functions between sites", "Analysis");
